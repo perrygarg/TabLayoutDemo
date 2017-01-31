@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
     }
 
+    /**
+     * Class ViewPagerAdapter extending FragmentPagerAdapter
+     */
     class ViewPagerAdapter extends FragmentPagerAdapter
     {
         private final List<Fragment> mFragmentList = new ArrayList<>();
