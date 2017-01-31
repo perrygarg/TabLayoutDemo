@@ -36,17 +36,17 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
 
-        TabLayout.Tab tab1 = tabLayout.newTab();
-        tab1.setText("kaka1");
-        tabLayout.addTab(tab1);
-
-        TabLayout.Tab tab2 = tabLayout.newTab();
-        tab2.setText("kaka2");
-        tabLayout.addTab(tab2);
-
-        TabLayout.Tab tab3 = tabLayout.newTab();
-        tab3.setText("kaka3");
-        tabLayout.addTab(tab3);
+//        TabLayout.Tab tab1 = tabLayout.newTab();
+//        tab1.setText("kaka1");
+//        tabLayout.addTab(tab1);
+//
+//        TabLayout.Tab tab2 = tabLayout.newTab();
+//        tab2.setText("kaka2");
+//        tabLayout.addTab(tab2);
+//
+//        TabLayout.Tab tab3 = tabLayout.newTab();
+//        tab3.setText("kaka3");
+//        tabLayout.addTab(tab3);
 
     }
 
@@ -70,12 +70,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return null;
+            return mFragmentList.get(position);
         }
 
         @Override
         public int getCount() {
-            return 0;
+            return mFragmentList.size();
         }
 
         public void addFragment(Fragment fragment, String title) {
