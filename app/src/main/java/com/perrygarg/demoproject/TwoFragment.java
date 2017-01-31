@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 /**
  * Created by PerryGarg on 29-01-2017.
  */
-public class TwoFragment extends Fragment {
+public class TwoFragment extends android.support.v4.app.Fragment {
 
     public TwoFragment()
     {
